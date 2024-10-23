@@ -1,0 +1,144 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-image:linear-gradient(to top,#d16b45,#86a8e7,#5ffbf1);
+    font-family: Arial, sans-serif;
+}
+.profile-image{
+    height:90vh;
+    width:30vw;
+    background-size: cover;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#brand-name {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-left: 1rem;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links li a:hover {
+    color: #ddd;
+}
+
+/* Section Styles */
+.section {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Projects Section */
+.projects-grid {
+    margin-left: 71px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.project {
+    
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.project h3 {
+    margin-top: 0;
+}
+
+.project p {
+    color: #666;
+}
+
+/* Contact Form */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+#contact-form label {
+    margin: 1rem 0 0.5rem;
+}
+
+#contact-form input, #contact-form textarea {
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact-form button {
+    padding: 0.7rem;
+    font-size: 1rem;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 0.5rem 0;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #brand-name {
+        margin-bottom: 1rem;
+    }
+}

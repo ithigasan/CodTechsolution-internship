@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Ithigasan</title>
+    <link rel="stylesheet" href="PERSONAL PORTFOLIO WEBSITE.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <a href="#" id="brand-name">ITHIGASAN</a>
+            <ul class="nav-links">
+                <li><a href="#about">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+        <img src="profile.jpeg" class="profile-image col-12" alt="wait">
+    
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h1>About Me</h1>
+            <p>Hi, I'm Ithigasan, a passionate web developer with experience in frontend and backend technologies.</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section m-auto col-12">
+        <div class="container">
+            <h2>My Projects</h2>
+            <div class="projects-grid m-5">
+                <div class="project">
+                    <h3>AI-Driven Product Pitch</h3>
+                    <p>This AI-driven tool automates product pitch creation using NLP, sentiment analysis, and data visualization for compelling and relevant pitches.</p>
+                    <a href="#project-section1" target="_blank">Read More</a>
+                </div>
+                <div class="project">
+                    <h3>Social Media Website</h3>
+                    <p>In 2024, I developed a social media website that enables users to create profiles, connect, and share content with a focus on user experience and data security.</p>
+                    <a href="#project-section2">Read More</a>
+                </div>
+                <div class="project">
+                    <h3>Responsive Food Shop Website</h3>
+                    <p>A responsive website designed for a food shop, enhancing user interaction and making online orders seamless.</p>
+                    <a href="#project-section3">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="PERSONAL PORTFOLIO WEBSITE.js"></script>
+</body>
+</html>
